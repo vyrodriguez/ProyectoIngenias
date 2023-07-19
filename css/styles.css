@@ -1,0 +1,15 @@
+body{
+    background-color: #B5B2B2;
+    font-family: Lucida Sans;
+}
+.listaMenu  {
+    display: inline-block;
+    margin: 0 0 0 20px;
+}
+/* Buscar manera de cen5trar mejor la imagen y elegir el tamaño  */
+.logo{
+    width: 90%;
+}
+.menu{
+    margin: 0 0 0 300px;
+}
