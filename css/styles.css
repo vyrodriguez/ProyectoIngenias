@@ -3,13 +3,32 @@ body{
     font-family: Lucida Sans;
 }
 .listaMenu  {
-    display: inline-block;
-    margin: 0 0 0 20px;
+    margin: 0 0 0 50px;
+    font-size: 15px;
+    list-style-type: none;
+}
+.enlace{
+    color: #000000;
+    text-decoration: none;
 }
 /* Buscar manera de cen5trar mejor la imagen y elegir el tamaño  */
 .logo{
-    width: 90%;
+    width: 100%;
 }
 .menu{
-    margin: 0 0 0 300px;
+    
+    display: inline-block;
+}
+
+@media (min-width= 768px){
+    .menu{
+        width: 50%;
+        display: inline-block;
+    }
+}
+@media (min-width= 1440px){
+    .menu{
+        width: 25%;
+        display: inline-block;
+    }
 }
