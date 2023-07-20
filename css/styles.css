@@ -1,23 +1,21 @@
 body{
-    background-color: #B5B2B2;
-    font-family: Lucida Sans;
+    background-color: #322169;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .listaMenu  {
-    margin: 0 0 0 50px;
-    font-size: 15px;
+    
+    display: inline-block;
+    font-size: 10px;
     list-style-type: none;
 }
 .enlace{
-    color: #000000;
+    color: #70fff6;
     text-decoration: none;
 }
 /* Buscar manera de cen5trar mejor la imagen y elegir el tamaño  */
 .logo{
     width: 100%;
-}
-.menu{
     
-    display: inline-block;
 }
 
 @media (min-width= 768px){
