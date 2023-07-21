@@ -28,13 +28,16 @@ body{
     
 }
 
-@media (min-width= 1440px){
+@media screen and  (min-width= 1440px){
     body{
         background-color: #322169;
         font-family: Arial, Helvetica, sans-serif;
     }
-    .listaMenu  {
-        font-size: 100px;
-        list-style-type: none;
+    .a{
+    text-align:center;
+    display: inline-block;
+    font-size: 220px;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;;
     }
 }
