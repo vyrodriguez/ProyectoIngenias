@@ -1,43 +1,81 @@
+
 body{
+    /* background-image: url(/img/fondo.jpg); */
     background-color: #322169;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lilita One', cursive;
+}
+.lista{
+    padding: 0 0 0 0px;
+    background-color: rgba(0, 0, 0, 0.82);
 }
 .listaMenu  {
     text-align:center;
     display: inline-block;
-    font-size: 10px;
+    font-size: 20px;
     list-style-type: none;
-    font-family: Arial, Helvetica, sans-serif;;
+    font-family: 'Lilita One', cursive;
+    margin:  0 0 0 0;
    
 }
 .enlace{
-    color: #70fff6;
+    color: white;
     text-decoration: none;
+    font-size: 20px;
+    
 }
 /* Buscar manera de cen5trar mejor la imagen y elegir el tamaño  */
 .logo{
     width: 100%;
-    
 }
 
-@media (min-width= 768px){
-    .menu{
-        width: 50%;
-        display: inline-block;
+footer{
+    background-color: black;
+    padding: 10px 0 50px 10px; 
+    color: white;
+    text-align: justify;
+
     }
-    
+.textoFooterRedes{
+    font-size: small;
 }
 
-@media screen and  (min-width= 1440px){
-    body{
-        background-color: #322169;
-        font-family: Arial, Helvetica, sans-serif;
+.textoFooterQuien{
+margin: 0px 800px 100px 0 ; 
+}
+
+.LogoRedes{
+    max-width: 8%;
+}
+
+.textoFooterContacto{
+    padding: 50px 0 0 0 ;
+}
+.listaMenu:hover{ font-weight:bold; background-color:rgb(49, 48, 48)}
+@media (min-width: 768px) {
+    .listaMenu {
+        margin: 0 0 0 10px;
+        font-size: 20px;
+        padding: 10px;
     }
-    .a{
-    text-align:center;
-    display: inline-block;
-    font-size: 220px;
-    list-style-type: none;
-    font-family: Arial, Helvetica, sans-serif;;
+    
+    .lista{
+        padding: 0 0 0 0px;
+    }
+    .container {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .listaMenu {
+        margin: 0 0 0 30px;
+        font-size: 30px;
+        padding: 15px;
+    }
+    .container {
+        max-width: 10px;
+    }
+    .logo{
+        width: 100%  ;
     }
 }
