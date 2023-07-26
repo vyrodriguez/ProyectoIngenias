@@ -1,83 +1,48 @@
-
 body{
-    /* background-image: url(/img/fondo.jpg); */
-    background-color: #322169;
-    font-family: 'Lilita One', cursive;
+    background-color: #070c1b;
+    font-family: 'Chakra Petch', sans-serif;
 }
-.lista{
-    padding: 0 0 0 0px;
-    background-color: rgba(0, 0, 0, 0.82);
-}
-.listaMenu  {
-    text-align:center;
-    display: inline-block;
-    list-style-type: none;
-    font-family: 'Lilita One', cursive;
-    margin:  0 0 0 0;
-   
-}
-.enlace{
-    color: white;
-    text-decoration: none;
-    font-size: 11px;
+h1{
+    color: #3dd9fc;
 }
 .logo{
     width: 100%;
 }
+.enlace{
+    color:  #3dd9fc;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.menu{
+    background-color: #070c1b;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+}
 
 footer{
-    background-color: black;
+    background-color:#070c1b;
     color: white;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 15px;
     text-align: justify;
-    font-family: 'Roboto', sans-serif; 
-    font-size: 10px;
     }
-.logoFooter{
-    max-width: 60%;
-    padding: 0 0 0px 20px ;
-}
 
-.textoFooterContacto{
-    padding: 20px 0 0 0 ;
-    font-family: 'Roboto', sans-serif; 
+.logoFooter{
+    max-width: 25%;
     
 }
-.listaMenu:hover{ font-weight:bold; background-color:rgb(49, 48, 48)}
-@media (min-width: 768px) {
-    .listaMenu {
-        margin: 0 0 0 10px;
-        padding: 10px;
-    }
-    .enlace{
-        color: white;
-        text-decoration: none;
-        font-size: 20px;
-    }
 
-    .lista{
-        padding: 0 0 0 0px;
- 
-       }
-    .textoFooterRedes{
-        font-size: 15px;
-    }
+
+
+.listaMenu:hover{ font-weight:bold; background-color:rgb(49, 48, 48)}
+
+
+
+@media (min-width: 768px) {
 
 }
 
-@media (min-width: 1024px) {
-    .listaMenu {
-        margin: 0 0 0 30px;
-        font-size: 30px;
-        padding: 15px;
-    }
-    .textoFooterRedes{
-        font-size: 25px;
-    }
-    footer{
-        font-size: 20px;
-    }
-
-    .logo{
-        width: 100%  ;
-    }
+@media (min-width: 1040px) {
 }
