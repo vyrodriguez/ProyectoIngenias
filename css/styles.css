@@ -1,48 +1,285 @@
+
+/* ----------------------------------------------------------------------------------------- */
+                                /* ESTILO DEL CUERPO */
+/* ----------------------------------------------------------------------------------------- */
+
 body{
     background-color: #070c1b;
     font-family: 'Chakra Petch', sans-serif;
 }
-h1{
-    color: #3dd9fc;
-}
 .logo{
-    width: 100%;
+    width: 40%;
 }
+
+/* ----------------------------------------------------------------------------------------- */
+                                /* ESTILO BARRA DE NAVEGACION */
+/* ----------------------------------------------------------------------------------------- */
 .enlace{
     color:  #3dd9fc;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 10px;
+    margin-left: 2px;
 }
 
+.enlace:hover{ font-weight:bold; background-color:rgb(49, 48, 48);}
+
 .menu{
+    list-style: none;
     background-color: #070c1b;
     display: flex;
     flex-direction: row;
-    justify-content: space-between ;
+    white-space: nowrap;
+    padding: 0 0 0 0;
 }
+
+
+/* ----------------------------------------------------------------------------------------- */
+                                /* ESTILO FOOTER */
+/* ----------------------------------------------------------------------------------------- */
 
 footer{
-    background-color:#070c1b;
+    background-color: #070c1b;
+    border: 2px solid #3dd8fc;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 0.5fr 0.5fr ;
+    grid-template-areas:
+    "logoredondoFooterB textoFooterRedes"
+    "descripcion  descripcion "
+    "contacto contacto";
+}
+
+.logoredondoFooterB{
+    width: 140px;
+    grid-area: logoredondoFooterB;
+}
+.descripcion{
     color: white;
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 10px;
+    text-align: justify;
+    grid-area: descripcion;
+    margin: 5px 5px 0 5px
+
+}
+.textoFooterRedes{
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    grid-area: textoFooterRedes;
+    margin: 50px 5px 0 5px;
+    transition: transform 0.2;
+}
+.textoFooterRedes i:hover {
+    transform: scale(1.2); /* Aumentamos el tamaño del icono al 120% */
+  }
+
+.contacto{
+    text-align: justify;
+    color: white;
+    text-align: justify;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 10px;
+    margin: 0 0 0 5px;
+    grid-area: contacto;
+
+}
+
+
+/* ----------------------------------------------------------------------------------------- */
+                                /* ESTILO INDICE PRINCIPAL */
+/* ----------------------------------------------------------------------------------------- */
+.indice{
+
+    color: white;
+    font-size: 10px;
+    text-align: justify;
+    text-align: center;
+    border: 1px solid #3dd8fc;
+    margin: 15px;
+}
+
+.vermas{
+    color: white;
+    margin-left: 60%;   
+    transition: transform 0.2s;
+}
+.vermas:hover {
+    font-size: 35px; 
+  }
+
+.flyer{
+    width: 100px;
+    height: 100px;
+    transition: transform 0.5s;
+
+}
+.flyer:hover {
+    transform: rotate(360deg);
+  }
+
+
+.bienvenido{
+    color:#3dd8fc;
+}
+/* ----------------------------------------------------------------------------------------- */
+                                /* ESTILO DE PAGINA BANDAS LOCALES */
+/* ----------------------------------------------------------------------------------------- */
+.h1principal12{
+    color: #3dd8fc;
+    font-size: 15px;
+    text-align: center;
+    margin: 5px;
+}
+
+.imagenprincipal12{
+    display: flex;
+    justify-content: center;
+    height: 350px;
+}
+
+.parrafoprincipal{
+    color: #3dd8fc;
     font-size: 15px;
     text-align: justify;
+    text-align: center;
+    border: 2px solid #3dd8fc;
+    padding: 5px;
+    margin: 20px;
+}
+
+.menu123{
+    display: block;
+    font-size: 15px;
+    text-align: center;
+}
+
+.listamenuAM li{
+    margin-right: 20px;
+    text-decoration: none;
+    list-style: none;
+    display: block;
+    text-decoration: none;
+    color: #3dd8fc;
+}
+
+nav.menuA123 a :hover{
+    text-decoration: underline;
+}
+
+.presentacionsinborde{
+    color: #3dd9fc;
+    font-size: 15px;
+    text-align: justify;
+    padding: 15px;
+}
+
+.presentacionconborde{
+    color: #3dd9fc;
+    font-size: 15px;
+    text-align: justify;
+    border: 2px solid #3dd8fc;
+    padding: 25px;
+    margin: 5px;
+}
+
+.logotipoimagen{
+    width: 200px;
+    height: 150px;
+    margin-right: 15px;
+}
+.contacto{
+    grid-area: contacto;
+}
+.descripcion{
+    grid-area: descripcion;
+}
+
+
+/* ----------------------------------------------------------------------------------------- */
+                                /* RESPONSIVE MOBILE M */
+/* ----------------------------------------------------------------------------------------- */
+@media (min-width: 375px){
+    .parrafoprincipal{
+        font-size: 28px;
     }
-
-.logoFooter{
-    max-width: 25%;
-    
+}
+/* ----------------------------------------------------------------------------------------- */
+                                /* RESPONSIVE MOBILE L */
+/* ----------------------------------------------------------------------------------------- */
+@media (min-width: 375px){
+    .parrafoprincipal{
+        font-size: 28px;
+    }
+}
+/* ----------------------------------------------------------------------------------------- */
+                                /* RESPONSIVE TABLET */
+/* ----------------------------------------------------------------------------------------- */
+@media (min-width: 768px){
+    .parrafoprincipal{
+        font-size: 28px;
+    }
 }
 
+/* ----------------------------------------------------------------------------------------- */
+                                /* RESPONSIVE LAPTOP */
+/* ----------------------------------------------------------------------------------------- */
+@media (min-width: 1024px){
+         /* ----------------------------------------------------------------------------------------- */
+                                /* ESTILO BARRA DE NAVEGACION */
+        /* ----------------------------------------------------------------------------------------- */
+        .enlace{
+            color:  #3dd9fc;
+            text-decoration: none;
+            font-size: 30px;
+            padding: 15px;
+        }
 
+        /* ----------------------------------------------------------------------------------------- */
+                                /* ESTILO INDICE PRINCIPAL */
+        /* ----------------------------------------------------------------------------------------- */
+        iframe{
+            width: 700px; /* Ancho para pantallas más grandes */
+            height: 500px;
+        }
+        .indice{
+            font-size: 25px;
+        }
+        .flyer{
+            width: 200px;
+            height: 200px;
 
-.listaMenu:hover{ font-weight:bold; background-color:rgb(49, 48, 48)}
+        }
+        .bienvenido{
+           text-size-adjust: 15px;
+        }
+        /* ----------------------------------------------------------------------------------------- */
+                                /* ESTILO FOOTER */
+        /* ----------------------------------------------------------------------------------------- */
 
-
-
-@media (min-width: 768px) {
-
+        .logoredondoFooterB{
+            width: 250px;
+        }
+        .descripcion{
+            font-size: 25px;
+        
+        }
+        .textoFooterRedes{
+            font-size: 25px;
+        }
+        
+        .contacto{
+            font-size: 15px;
+        
+        }
+        
 }
 
-@media (min-width: 1040px) {
-}
+/* ----------------------------------------------------------------------------------------- */
+                                /* RESPONSIVE 4K */
+/* ----------------------------------------------------------------------------------------- */
+
+
+
+
