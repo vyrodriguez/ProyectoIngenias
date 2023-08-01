@@ -1,18 +1,18 @@
+<!-- Página realizada por Abril Morales -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bandas locales</title>
-    <!-- TIPOGRAFIA -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
-
-    <!-- Acá se presentaran las bandas -->
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ESTILOS CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
@@ -20,31 +20,52 @@
         <nav>
             <ul  class="menu">
               <li><a href="/index.html" class="enlace">Inicio</a></li>
-              <li><a href="/bandasLocales.html" class="enlace">Bandas Locales</a></li>
+              <li><a href="/bandas.html" class="enlace">Bandas Locales</a></li>
               <li><a href="/proximasFechas.html" class="enlace">Próximas Fechas</a></li>
               <li><a href="/sobreNosotros.html" class="enlace">Sobre Nosotros</a></li>
               <li><a href="/contacto.html" class="enlace">¿Querés formar parte?</a></li>
             </ul>
         </nav>
+
     </header>
     <main>
-        <h1>FORMULARIO PARA SER PARTE DEL GRUPO</h1>
+        <form>
+            <h2>FORMULARIO PARA DIFUNDIR TU BANDA</h2>
+            <div class="input-group">
+             <label for="name">Nombre</label>
+             <input type="text" name="name" id="name" placeholder="Nombre">
+    
+             <label for="phone">Teléfono</label>
+             <input type="tel" name="phone" id="phone" placeholder="Ingresa tu correo">
+    
+             <label for="email">Email</label>
+             <input type="email" name="email" id="email" placeholder="Email">
+    
+             <label for="message">Mensaje</label>
+             <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
+    
+             <input class="btn" type="submit" value="Enviar">
+    
+            </div>
+         </form>
     </main>
 
     <footer>
-        <div>
-            <img class="logoFooter" src="img/logotiporedondo2.jpg" alt="Logotipo Bandas Comodoro Rivadavia">
-            <div>Bandas Comodorenses es una organización no lucrativa, independiente y autogestiva que tiene como objetivo la difusión de todas las actividades relacionadas a Bandas de Música de la Ciudad de Comodoro Rivadavia y alrededores.</div>
-            <div>Comodoro Rivadavia, Chubut, Patagonia Argentina</div>
-            <div><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i> Algún lugar de Comodoro</div>
-            <div><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> bandascomodorenses@gmail.com</div>
-            <div><i class="fa-solid fa-phone" style="color: #fcfcfc;"></i>  (0297)-4064856</div>
-            <div class="textoFooterRedes">¡Seguinos en nuestras redes sociales!</div>
-                <i class="fa-brands fa-square-instagram" style="color: white"></i>
-                <i class="fa-brands fa-square-twitter" style="color: white;"></i>
-                <i class="fa-brands fa-square-facebook" style="color: white;"></i>
-                <i class="fa-brands fa-square-youtube" style="color: white;"></i>
-            </div>
+        <img class="logoredondoFooterB" src="img/logotiporedondo2.jpg" alt="Logotipo Bandas Comodoro Rivadavia">
+        <div class="descripcion">Bandas Comodorenses es una organización no lucrativa, independiente y autogestiva que tiene como objetivo la difusión de todas las actividades relacionadas a Bandas de Música de la Ciudad de Comodoro Rivadavia y alrededores.</div>
+        <section class="contacto">
+        <div>Comodoro Rivadavia, Chubut, Patagonia Argentina</div>
+        <div><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i> Algún lugar de Comodoro</div>
+        <div><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> bcomodorenses@gmail.com</div>
+        <div><i class="fa-solid fa-phone" style="color: #fcfcfc;"></i>  (0297)-4064856</div>
+        </section>
+        <div  class="textoFooterRedes">
+            <div>¡Seguinos en nuestras redes sociales!</div>
+            <i class="fa-brands fa-square-instagram" style="color: white"></i>
+            <i class="fa-brands fa-square-twitter" style="color: white;"></i>
+            <i class="fa-brands fa-square-facebook" style="color: white;"></i>
+            <i class="fa-brands fa-square-youtube" style="color: white;"></i>      
+        </div> 
     </footer>
     
 </body>
