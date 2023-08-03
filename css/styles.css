@@ -18,7 +18,7 @@ body{
     color:  #3dd9fc;
     text-decoration: none;
     font-size: 10px;
-    margin-left: 2px;
+    padding:2px;
 }
 
 .enlace:hover{ font-weight:bold; background-color:rgb(49, 48, 48);}
@@ -29,6 +29,8 @@ body{
     display: flex;
     flex-direction: row;
     white-space: nowrap;
+    
+    padding: 0 0 0 0;
     
 }
 
