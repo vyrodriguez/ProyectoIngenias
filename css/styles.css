@@ -25,17 +25,22 @@ body{
     text-decoration: none;
     font-size: 15px;
     padding: 5px;
+    overflow: hidden;
+    float: right;
 }
 
 .enlace:hover{ font-weight:bold; background-color:rgb(49, 48, 48);}
 
+.menu li {
+    margin-bottom: 10px; /* Agregar margen inferior de 10px */
+  }
+  
 .menu{
     list-style: none;
     background-color: #070c1b;
     display: flex;
     flex-direction: row;
     white-space: nowrap;
-    
     padding: 0 0 0 0;
     
 }
