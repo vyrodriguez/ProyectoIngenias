@@ -24,7 +24,6 @@ body{
     color:  #3dd9fc;
     text-decoration: none;
     font-size: 15px;
-    padding:2px;
 }
 
 .enlace:hover{ font-weight:bold; background-color:rgb(49, 48, 48);}
@@ -308,7 +307,7 @@ input, textarea {
 .texto98{
     color: #3dd9fc;
     font-size: 20px;
-    text-align: center;
+    text-align: justify   ;
     margin: 5px;
 }
 
@@ -316,6 +315,7 @@ input, textarea {
     border: 2px solid #3dd8fc;
     padding: 5px;
     margin: 20px;
+    text-align: justify;
 }
 
 .imagencomodororivadavia{
@@ -372,23 +372,15 @@ input, textarea {
                                 /* RESPONSIVE MOBILE L */
 /* ----------------------------------------------------------------------------------------- */
 @media (min-width: 375px){
-    .parrafoprincipal{
-        font-size: 28px;
-    }
 }
 /* ----------------------------------------------------------------------------------------- */
                                 /* RESPONSIVE TABLET */
 /* ----------------------------------------------------------------------------------------- */
 @media (min-width: 768px){
-    .parrafoprincipal{
-        font-size: 28px;
-    }
              /* ----------------------------------------------------------------------------------------- */
                                 /* ESTILO BARRA DE NAVEGACION */
         /* ----------------------------------------------------------------------------------------- */
         .enlace{
-            color:  #3dd9fc;
-            text-decoration: none;
             font-size: 20px;
             padding: 5px;
         }
@@ -494,8 +486,6 @@ input, textarea {
                                 /* ESTILO BARRA DE NAVEGACION */
         /* ----------------------------------------------------------------------------------------- */
         .enlace{
-            color:  #3dd9fc;
-            text-decoration: none;
             font-size: 25px;
             padding: 15px;
         }
@@ -508,8 +498,6 @@ input, textarea {
                            /* ESTILO BARRA DE NAVEGACION */
    /* ----------------------------------------------------------------------------------------- */
    .enlace{
-       color:  #3dd9fc;
-       text-decoration: none;
        font-size: 35px;
        padding: 15px;
    }
