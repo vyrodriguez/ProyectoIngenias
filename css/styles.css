@@ -24,6 +24,7 @@ body{
     color:  #3dd9fc;
     text-decoration: none;
     font-size: 15px;
+    padding: 5px;
 }
 
 .enlace:hover{ font-weight:bold; background-color:rgb(49, 48, 48);}
