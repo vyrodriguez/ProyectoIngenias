@@ -7,5 +7,3 @@ Integrantes:
 - Rodriguez Ana Victoria
 - Morales Abril
 - Alejandra Garcia
-- Deborah Anzor
-
