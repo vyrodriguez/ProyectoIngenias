@@ -496,6 +496,7 @@ input, textarea {
 
         form {
             width: 400px;
+            
         }
         h2{
             font-size: 35px;
@@ -520,6 +521,9 @@ input, textarea {
         .enlace{
             font-size: 25px;
             padding: 15px;
+        }
+        .estructuraForm{
+            margin: center;
         }
 
 }
