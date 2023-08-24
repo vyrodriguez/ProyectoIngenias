@@ -255,11 +255,17 @@ nav.menuA123 a :hover{
 /* ----------------------------------------------------------------------------------------- */
 
 form {
-    padding: 50px 55px;
+    padding: 5px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     text-align: center;
-    width: 320px;
+    width: 200px;
+}
+
+.estructuraForm{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
 }
 
 .input-group{
@@ -270,7 +276,7 @@ form {
 
 h2{
     color: #3dd8fc;
-    font-size: 35px;
+    font-size: 20px;
 }
 
 label {
@@ -290,7 +296,7 @@ input, textarea {
     outline: none;
 }
 
-.btn {
+.btnenviar {
     font-size: 16px;
     color: #ffffff;
     border: 0;
@@ -298,6 +304,9 @@ input, textarea {
     background-color: #3dd8fc;
     cursor: pointer;
 }
+.btnenviar:hover {
+    transform: scale(1.2); /* Aumentamos el tamaño del icono al 120% */
+  }
 
 /* ----------------------------------------------------------------------------------------- */
                                 /* ESTILOS DE SOBRE NOSOTROS */
@@ -481,7 +490,24 @@ input, textarea {
             text-align: center;
             margin: 5px;
         }
+        /* ----------------------------------------------------------------------------------------- */
+                                /* ESTILO DE CONTACTO */
+        /* ----------------------------------------------------------------------------------------- */
 
+        form {
+            width: 400px;
+        }
+        h2{
+            font-size: 35px;
+        }
+
+        label {
+            font-size: 25px;
+        }
+
+        .btnenviar {
+            font-size: 35px;
+        }
 }
 
 /* ----------------------------------------------------------------------------------------- */
@@ -495,6 +521,7 @@ input, textarea {
             font-size: 25px;
             padding: 15px;
         }
+
 }
 /* ----------------------------------------------------------------------------------------- */
                                 /* RESPONSIVE 4K */
@@ -507,7 +534,15 @@ input, textarea {
        font-size: 35px;
        padding: 15px;
    }
-}
+
+        /* ----------------------------------------------------------------------------------------- */
+                                /* ESTILO DE CONTACTO */
+        /* ----------------------------------------------------------------------------------------- */
+
+        form {
+            width: 800px;
+        }
+    }
 
 
 
