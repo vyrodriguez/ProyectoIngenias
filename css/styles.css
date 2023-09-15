@@ -11,6 +11,7 @@ body{
 .logo{
     width: 30%;
     margin: center;
+   
     
 }
 .imagenposicion{
@@ -33,6 +34,10 @@ body{
 
 .menu li {
     margin-bottom: 10px; /* Agregar margen inferior de 10px */
+    overflow-x: auto;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   
 .menu{
@@ -40,11 +45,19 @@ body{
     background-color: #070c1b;
     display: flex;
     flex-direction: row;
+
     white-space: nowrap;
     padding: 0 0 0 0;
     
 }
 
+.caja{
+    color:  #3dd9fc;
+    font-size: 10px;
+    float: right;
+    display: flex;
+    position: fixed;
+}
 
 /* ----------------------------------------------------------------------------------------- */
                                 /* ESTILO FOOTER */
