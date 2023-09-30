@@ -1,3 +1,41 @@
+window.onload = () => {
+    let formulario = document.querySelector(".registro");
+    let elementos = formulario.elements;
+    let mensajeName = document.getElementById("mensajeName");
+    let mensajeEmail = document.getElementById("mensajeEmail");
+
+    for (let i = 0; i < elementos.length; i++) {
+        let inputA = elementos[i];
+        // Verificamos si el elemento es un campo de entrada de texto
+        if (inputA.type === "text") {
+            inputA.addEventListener("keyup", (event) => {
+                let inputValue = event.target.value; // Accedemos al valor del campo que disparó el evento        
+                console.log(inputValue)
+                let mensaje = "";
+                // Expresión regular que permite solo letras y espacios
+                let regex = /^[A-Za-z\s]+$/;
+
+                if (!regex.test(inputValue)) {
+                    mensaje = "El nombre no debe contener números ni símbolos";
+                }
+                mensajeName.innerText = mensaje;
+            });
+        }
+        else if (inputA.type === "email"){
+            inputA.addEventListener("keyup", (event) => {
+                let inputValue = event.target.value; // Accedemos al valor del campo que disparó el evento        
+                console.log(inputValue)
+                let mensaje = "";
+                let regex = /^[A-Za-z0-9]+@[A-Za-z0-9]+\.[A-Za-z]+$/;
+                if (!regex.test(inputValue)) {
+                    mensaje = "Ingrese un email valido";
+                }
+                mensajeEmail.innerText = mensaje;
+            });
+        }
+
+    }
+}
  function mostrarAlerta() {
      alert('¡BIENVENIDOS A BANDAS COMODORENSES, NO TE OLVIDES DE SEGUIRNOS EN NUESTRAS REDES SOCIALES!');
  }
