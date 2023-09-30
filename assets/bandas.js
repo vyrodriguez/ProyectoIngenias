@@ -3,7 +3,9 @@ window.onload = () => {
     let elementos = formulario.elements;
     let mensajeName = document.getElementById("mensajeName");
     let mensajePassword = document.getElementById("mensajePassword");
+    let password = document.getElementById("password");
     let mensajeEmail = document.getElementById("mensajeEmail");
+    
 
     for (let i = 0; i < elementos.length; i++) {
         let inputA = elementos[i];
@@ -27,7 +29,6 @@ window.onload = () => {
             inputA.addEventListener("keyup", (event) => {
                 let inputValue = event.target.value; // Accedemos al valor del campo que disparó el evento        
                 let mensaje = "";
-                console.log(inputValue)
                 // EXPRESIONES REGULARES
                 let regex=/^(?=.*[a-z])(?=.*[0-9]).{7,}$/;              
                 
@@ -40,7 +41,9 @@ window.onload = () => {
                     }
                 }
                 mensajePass.innerText = mensaje;
-                let contraseña=mensaje;
+                let contraseña=inputValue;
+                console.log(mensajePassword)
+                console.log(password) 
                 if (contraseña){
                     if(contraseña===mensaje)
                     mensaje = "Las contraseñas coinciden";
