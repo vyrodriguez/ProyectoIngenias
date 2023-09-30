@@ -1,41 +1,69 @@
 window.onload = () => {
-    let formulario = document.querySelector(".registro");
+    let formulario = document.querySelector("#formularioNuevoUsuario");
     let elementos = formulario.elements;
     let mensajeName = document.getElementById("mensajeName");
+    let mensajePassword = document.getElementById("mensajePassword");
     let mensajeEmail = document.getElementById("mensajeEmail");
 
     for (let i = 0; i < elementos.length; i++) {
         let inputA = elementos[i];
         // Verificamos si el elemento es un campo de entrada de texto
-        if (inputA.type === "text") {
+        switch (inputA.type){
+            case "text": 
             inputA.addEventListener("keyup", (event) => {
                 let inputValue = event.target.value; // Accedemos al valor del campo que disparó el evento        
-                console.log(inputValue)
                 let mensaje = "";
-                // Expresión regular que permite solo letras y espacios
-                let regex = /^[A-Za-z\s]+$/;
-
-                if (!regex.test(inputValue)) {
-                    mensaje = "El nombre no debe contener números ni símbolos";
+                // EXPRESIONES REGULARES
+                let regex=/^(?=.*[a-z])(?=.*[0-9]).{7,}$/;              
+                
+                if (inputValue.length<7) {
+                    mensaje = "El nombre de usuario debe tener al menos 7 caracteres.";
                 }
                 mensajeName.innerText = mensaje;
+
             });
-        }
-        else if (inputA.type === "email"){
+            break;
+            case  "password":
             inputA.addEventListener("keyup", (event) => {
                 let inputValue = event.target.value; // Accedemos al valor del campo que disparó el evento        
+                let mensaje = "";
                 console.log(inputValue)
+                // EXPRESIONES REGULARES
+                let regex=/^(?=.*[a-z])(?=.*[0-9]).{7,}$/;              
+                
+                if (inputValue.length<7) {
+                    mensaje = "La contraseña debe tener al menos 7 caracteres.";
+                }
+                else{
+                    if(!regex.test(inputValue)){
+                        mensaje="La contraseña debe contener por lo menos un número"
+                    }
+                }
+                mensajePass.innerText = mensaje;
+                let contraseña=mensaje;
+                if (contraseña){
+                    if(contraseña===mensaje)
+                    mensaje = "Las contraseñas coinciden";
+                    else
+                    mensaje = "Las contraseñas no coinciden";
+                }
+                mensajeConfirm.innerText = mensaje;
+            });
+            break;
+            case "email":
+            inputA.addEventListener("keyup", (event) => {
+                let inputValue = event.target.value; // Accedemos al valor del campo que disparó el evento        
                 let mensaje = "";
                 let regex = /^[A-Za-z0-9]+@[A-Za-z0-9]+\.[A-Za-z]+$/;
                 if (!regex.test(inputValue)) {
-                    mensaje = "Ingrese un email valido";
+                    mensaje = "Ingrese un email válido";
                 }
                 mensajeEmail.innerText = mensaje;
             });
+            break;
         }
-
     }
-}
+};
  function mostrarAlerta() {
      alert('¡BIENVENIDOS A BANDAS COMODORENSES, NO TE OLVIDES DE SEGUIRNOS EN NUESTRAS REDES SOCIALES!');
  }
