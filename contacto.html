@@ -12,10 +12,10 @@
     <!-- ICONOS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- ESTILOS CSS -->
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="assets/bandas.js"></script>
-
+    <link rel="stylesheet" href="css/styles.css"> 
+    <link rel="website icon" type="jpg" href="img/logotiporedondo2.jpg">  
 </head>
+
 <body>
     <header>
         <div class="caja">
@@ -26,6 +26,9 @@
                 /Registrarse
             </div>
         </div>
+
+        <div onclick="mostrarAlerta()" class="imagenposicion"><img class= "logo" src="img/logotiporedondo2.jpg" alt="Logotipo Bandas Comodoro Rivadavia"></div>
+
         <nav>
             <ul  class="menu">
               <li><a href="index.html" class="enlace">Inicio</a></li>
@@ -37,44 +40,49 @@
         </nav>
 
     </header>
+
     <main>
         <div class="parrafoprincipal">
             <h1 class="h1principal12">¿Querés formar parte de Bandas Comodorenses?</h1>
             <p>Nuestro staff siempre está dispuesto a integrar a cualquier persona interesada en las bandas de nuestra ciudad y busca constantemente ideas nuevas para ayudar a la difusión de la música comodororense.</p>
             <div id='formularioUnirse'class="estructuraForm">
-            <form>
+
+            <form id="formulario">
                 <h2>FORMULARIO PARA FORMAR PARTE DE BANDA COMODORENSES</h2>
                 <p>Te Invitamos a que llenes el siguiente formulario con tus datos</p>
                 <div class="input-group">
                  <label for="name">Nombre</label>
-                 <input type="text" name="name" id="name" placeholder="Ingresa tu Nombre Completo">
+                 <input type="text" name="name" id="name" class="name" placeholder="Ingresa tu Nombre Completo">
                  
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Ingresa tu Email">
+                <input type="email" name="email" id="email" class="email" placeholder="Ingresa tu Email">
     
                  <label for="phone">Teléfono</label>
-                 <input type="tel" name="phone" id="phone" placeholder="Ingresa tu teléfono">  
+                 <input type="tel" name="phone" id="phone" class="phone" placeholder="Ingresa tu teléfono">  
 
                  <label>¿Tienes una banda?</label>
                  <label>
-                     <input type="radio" name="band" value="no" id="no"> NO
+                     <input type="radio" name="band" value="no" id="no" required > NO
                  </label>
                  <label>
-                     <input type="radio" name="band" value="si" id="si"> SI
+                     <input type="radio" name="band" value="si" id="si" required > SI
                  </label>
+
                  <label for="message">Mensaje</label>
-                 <textarea name="message" id="message" cols="30" rows="5" placeholder="Usa este espacio para comentarnos un poco sobre tus gustos musicales"></textarea>
+                 <textarea name="message" id="message" class="message" cols="30" rows="5" placeholder="Usa este espacio para comentarnos un poco sobre tus gustos musicales"></textarea>
         
                  <input class="btnenviar" type="submit" value="Enviar">
-        
                 </div>
             </form>
             </div>
         </div>
+
+
         <div class="parrafoprincipal">
             <h1 class="h1principal12">¿Tenés una Banda y querés difundirla?</h1>
             <p>Bandas Comodorenses siempre esta buscando las nuevas o viejas bandas que quierán compartir ya sea sus redes sociales, música o lugares donde se presentan. Si todavía no te encontras dentro de nuestra lista, ¡Estás en lugar correcto!</p>
             <div id="formularioDifusion"class="estructuraForm">
+
             <form>
                 <h2>FORMULARIO PARA DIFUNDIR TU BANDA</h2>
                 <p>Te Invitamos a que llenes el siguiente formulario con los datos de tu banda y un miembro de nuestro staff se comunicará!</p>
@@ -108,7 +116,12 @@
             </form>
             </div>
         </div>
-
+        <div class="informacionesreg">
+             <h2  >Información Registrada Primer formulario:</h2>
+            <ul id="listaInformacion" class="listainformacion">
+                <!-- Los datos se tendrian que ver acá -->
+            </ul>
+        </div>
     </main>
 
     <footer>
@@ -119,6 +132,7 @@
         <div><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i> Algún lugar de Comodoro</div>
         <div><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> bcomodorenses@gmail.com</div>
         <div><i class="fa-solid fa-phone" style="color: #fcfcfc;"></i>  (0297)-4064856</div>
+        <div>Copyright DIMATERIA © 2023 - Todos los derechos reservados.</div>
         </section>
         <div  class="textoFooterRedes">
             <div>¡Seguinos en nuestras redes sociales!</div>
@@ -128,6 +142,7 @@
             <a href="https://www.youtube.com/user/fundacionypf" target="_blank"><i class="fa-brands fa-square-youtube" style="color: white;"></i></a>
         </div>            
     </footer>
-    
+
+<script src="assets/contacto.js" ></script>    
 </body>
 </html>

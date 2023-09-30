@@ -319,7 +319,11 @@ input, textarea {
 }
 .btnenviar:hover {
     transform: scale(1.2); /* Aumentamos el tamaño del icono al 120% */
-  }
+}
+
+.listainformacion{
+    color: #ffffff;
+}
 
 /* ----------------------------------------------------------------------------------------- */
                                 /* ESTILOS DE SOBRE NOSOTROS */
@@ -332,12 +336,12 @@ input, textarea {
     margin: 5px;
 }
 
-.texto98{
+/* .texto98{
     color: #3dd9fc;
     font-size: 20px;
     text-align: justify   ;
     margin: 5px;
-}
+} */
 
 .textoprincipal98{
     border: 2px solid #3dd8fc;
@@ -381,10 +385,6 @@ input, textarea {
 .resixedimagen:last-child {
     margin-right: 0;
 } 
-
-.footerpsn{
-    display: flex;
-}
 
 
 
