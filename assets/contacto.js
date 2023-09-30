@@ -37,7 +37,7 @@ function guardarInformacion() {
     mostrarInformacion();
 }
 
- Función para mostrar la información almacenada
+//  Función para mostrar la información almacenada
  function mostrarInformacion() {
      const listaInformacion = document.getElementById("listaInformacion");
      listaInformacion.textContent = "";
