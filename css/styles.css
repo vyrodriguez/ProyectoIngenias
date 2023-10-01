@@ -321,7 +321,9 @@ input, textarea {
     transform: scale(1.2); /* Aumentamos el tamaño del icono al 120% */
 }
 
-
+.informacionesreg{
+    color: #ffffff;
+}
 
 /* ----------------------------------------------------------------------------------------- */
                                 /* ESTILOS DE SOBRE NOSOTROS */
