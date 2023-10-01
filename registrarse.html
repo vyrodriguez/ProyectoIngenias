@@ -25,16 +25,27 @@
 
     <!-- JS UTILIZADO -->
     <script src="assets/bandas.js"></script>
-    <title>BANDAS COMODORENSES INICIO </title>
+    <title>Registrarse</title>
     
 </head>
 <body>
     
     <header>
-        <div class="container-sm d-flex justify-content-end">
-            <button  onclick="iniciarSesion()" type="button" class="btn btn-sm btn-outline-info">Iniciar Sesion</button>
-            <a href="registrarse.html" class="btn btn-sm btn-outline-danger">Registrarse</a>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div>
+              <button  onclick="iniciarSesion()" type="button" class="btn btn-sm btn-outline-info">Iniciar Sesion</button>
+              <button type="button" class="btn btn-sm btn-outline-danger">Registrarse</button>
+            </div>
+          </div>
+          <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </nav>
         </div>
+
+
+
         
         <div class="imagenposicion"><img class= "logo" src="img/logotiporedondo2.jpg" alt="Logotipo Bandas Comodoro Rivadavia"></div>
 
@@ -50,44 +61,35 @@
         </header>
 
 <main>
-    
-    <div class="imagenposicion"><h1 class="bienvenido">¡BIENVENIDOS!</h1></div>
-    
-    <div class= "indice">
-        <p>¡Te invitamos a que escuches nuestra lista de reproducción!</p>
-        <div class="imagenposicion"><iframe width="150" height="80" src="https://www.youtube.com/embed/videoseries?si=7sGPziFBzHVaraxI&amp;list=PLPTNyGKweQXdvNv8uyhm5cnzMniXXOtXt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-    </div>
-    <div class= "indice">
-        <h1>BANDAS LOCALES</h1>
-        <p>Comodoro Rivadavia, una ciudad situada en la Patagonia argentina ha dado origen a diversas agrupaciones talentosas. A continuación, le presentamos cinco de estas notables bandas locales que cautivan a audiencias con su singular propuesta artística y su pasión por la música.</p>
-        <div class="imagenposicion"><img src="img/logodiostesalvevecina.jpg" alt="logo de Dios Te Salve Vecina (Banda)" class="flyer">  
-        <img src="img/logoabelardos.jpg" alt="logo de Abelardos (Banda)" class="flyer">
-        <img src="img/logopolifonia.jpg" alt="logo de Polifonia (Banda)" class="flyer">
-        <img src="img/logoeldescarte.jpg" alt="logo de El Descarte (Banda)" class="flyer">
-        <img src="img/logoaluxinados.jpg" alt="logo de aluxinados (Banda)" class="flyer"></div>
-        <a href="/bandas.html" class="vermas">VER MÁS</a>
-    </div>
-    <div class= "indice">
-        <h1>PRÓXIMAS FECHAS</h1>
-        <p>¿Querés saber cuando y en que lugar se presentan las bandas? En esta sección lo vas a descubrir.</p>
-        <img class="flyer" src="img/invitaciondeabelardos.jpg" alt="Flyer Abelardos">
-        <img class = "flyer" src="img/invitaciondealuxinados.jpg" alt="Flyer Aluxinados">
-        <img class="flyer" src="img/invitaciondeeldescarte.jpg" alt="Flyer El Descarte">
-        <img class="flyer" src="img/invitaciondediostesalve.jpg" alt="Flyer Dios te salve vecina">
-        <img class="flyer" src="img/invitaciondepolifonia.jpg" alt="Flyer Polifonia">
-        <a href="/proximasFechas.html" class="vermas">VER MÁS</a>
+        <div class="container-fluid d-flex justify-content-center mx-auto">
 
+            <form class="form-control-sm" id="formularioNuevoUsuario">
+                
+                <h2>Nuevo Usuario</h2>
+                <div class="input-group">
+                    <label for="name">Nombre</label>
+            <p id="mensajeName" class="text-light"></p>
+            <input type="text" name="name" id="name" placeholder="Ingresa un Usuario">
+            
+            <label for="email">Email</label>
+            <p id="mensajeEmail" class="text-light"></p>
+            <input type="email" name="email" id="email" placeholder="Ingresa tu Email">
+            
+            <label for="password">Contraseña</label>
+            <p id="mensajePass" class="text-light"></p>
+            <input type="password" name="password" id="password" placeholder="Ingresa Contraseña">
+
+            <label for="confirmPassword">Repetir Contraseña</label>
+            <p id="mensajeConfirm" class="text-light"></p>
+            <input type="password" name="password" id="password" placeholder="Ingresa Contraseña">
+
+            <input class="btnenviar" type="submit" value="Crear Usuario">
+            </div>
+        </form>
     </div>
-    <div class= "indice">
-        <h1>¿QUERÉS FORMAR PARTE DE NUESTRO EQUIPO?</h1>
-        <p>¿Tenés una banda y necesitas difundirla? Te invitamos a que llenés un formulario para que te conectactemos</p>
-        <a href="/contacto.html" class="vermas">VER MÁS</a>
-        <p>O simplemente te gusto nuestro trabajo y querés ser parte él? te invitamos también a que nos contactes mediante el siguiente formulario</p>
-        <a href="/contacto.html" class="vermas">VER MÁS</a>
-        
-    </div>
+    
 </main>
-    <footer>
+<footer>
         <img  class="logoredondoFooterB" src="img/logotiporedondo2.jpg" alt="Logotipo Bandas Comodoro Rivadavia">
         <div class="descripcion">Bandas Comodorenses es una organización no lucrativa, independiente y autogestiva que tiene como objetivo la difusión de todas las actividades relacionadas a Bandas de Música de la Ciudad de Comodoro Rivadavia y alrededores.</div>
         <div class="contacto">
