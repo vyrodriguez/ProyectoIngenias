@@ -46,13 +46,12 @@
             <p>Nuestro staff siempre está dispuesto a integrar a cualquier persona interesada en las bandas de nuestra ciudad y busca constantemente ideas nuevas para ayudar a la difusión de la música comodororense.</p>
             <div id='formularioUnirse'class="estructuraForm">
 
-            <form class="registro">
+            <form class="registro" id="userForm" >
 
                 <h2>FORMULARIO PARA FORMAR PARTE DE BANDA COMODORENSES</h2>
                 <p>Te Invitamos a que llenes el siguiente formulario con tus datos</p>
                 <div class="input-group">
                  <label for="name">Nombre</label>
-
                  <p id="mensajeName"></p>
                  <input type="text" name="name" id="name" placeholder="Ingresa tu Nombre Completo">
                  
@@ -61,25 +60,25 @@
                 <input type="email" name="email" id="email" placeholder="Ingresa tu Email">
 
     
-                 <label for="phone">Teléfono</label>
-                 <input type="tel" name="phone" id="phone" class="phone" placeholder="Ingresa tu teléfono">  
+                <label for="phone">Teléfono</label>
+                <input type="tel" name="phone" id="phone" class="phone" placeholder="Ingresa tu teléfono">  
 
-                 <label>¿Tienes una banda?</label>
-                 <label>
-                     <input type="radio" name="band" value="no" id="no" required > NO
-                 </label>
-                 <label>
-                     <input type="radio" name="band" value="si" id="si" required > SI
-                 </label>
+                <label>¿Tienes una banda?</label>
+                <label>
+                    <input type="radio" name="band" value="no" id="no" required > NO
+                </label>
+                <label>
+                    <input type="radio" name="band" value="si" id="si" required > SI
+                </label>
 
-                 <label for="message">Mensaje</label>
-                 <textarea name="message" id="message" class="message" cols="30" rows="5" placeholder="Usa este espacio para comentarnos un poco sobre tus gustos musicales"></textarea>
+                <label for="message">Mensaje</label>
+                <textarea name="message" id="message" class="message" cols="30" rows="5" placeholder="Usa este espacio para comentarnos un poco sobre tus gustos musicales"></textarea>
         
                  <input class="btnenviar" type="submit" value="Enviar">
                 </div>
             </form>
-            </div>
         </div>
+    </div>
 
 
         <div class="parrafoprincipal">
@@ -87,45 +86,54 @@
             <p>Bandas Comodorenses siempre esta buscando las nuevas o viejas bandas que quierán compartir ya sea sus redes sociales, música o lugares donde se presentan. Si todavía no te encontras dentro de nuestra lista, ¡Estás en lugar correcto!</p>
             <div id="formularioDifusion"class="estructuraForm">
 
-            <form>
+            <form class="registro2" id="bandForm" >
                 <h2>FORMULARIO PARA DIFUNDIR TU BANDA</h2>
                 <p>Te Invitamos a que llenes el siguiente formulario con los datos de tu banda y un miembro de nuestro staff se comunicará!</p>
                 <div class="input-group">
                  <label for="name">Nombre de tu banda</label>
-                 <input type="text" name="name" id="name" placeholder="Ingresa el nombre completo de la banda">
+                 <input type="text" name="name" id="name" class="name2" placeholder="Ingresa el nombre completo de la banda">
                  
                 <label for="email">Email de tu banda o del representante</label>
-                <input type="email" name="email" id="email" placeholder="Ingresa el Email">
+                <input type="email" name="email" id="email" class="email2" placeholder="Ingresa el Email">
     
                  <label for="phone">Teléfono del representante o de un integrante</label>
-                 <input type="tel" name="phone" id="phone" placeholder="Ingresa el teléfono">  
+                 <input type="tel" name="phone" id="phone" class="phone2" placeholder="Ingresa el teléfono">  
                 
                  <label for="genero">Género Musical</label>
-                 <input type="text" name="genero" id="genero" placeholder="Ingresa el Género Musical de la banda">  
+                 <input type="text" name="genero" id="genero" class="genero" placeholder="Ingresa el Género Musical de la banda">  
                  
                  <label>¿Tienen Redes Sociales?</label>
                  <label>
-                     <input type="radio" name="band" value="no" id="no"> NO
+                     <input type="radio" name="band2" value="no" id="no" required > NO
                  </label>
                  <label>
-                     <input type="radio" name="band" value="si" id="si"> SI
+                     <input type="radio" name="band2" value="si" id="si" required > SI
                  </label>
 
                  <label for="message">Mensaje</label>
-                 <textarea name="message" id="message" cols="30" rows="5" placeholder="Usa este espacio para comentarnos un poco sobre la banda, sus integrantes, la musica que tocan, etc"></textarea>
+                 <textarea name="message" id="message" class="message2" cols="30" rows="5" placeholder="Usa este espacio para comentarnos un poco sobre la banda, sus integrantes, la musica que tocan, etc"></textarea>
         
                  <input class="btnenviar" type="submit" value="Enviar">
         
                 </div>
             </form>
-            </div>
         </div>
-        <div class="informacionesreg">
-             <h2  >Información Registrada Primer formulario:</h2>
-            <ul id="listaInformacion" class="listainformacion">
+        </div>
+        <div id="userInfoList" class="informacionesreg">
+            <h2>Información Registrada Primer formulario:</h2>
+            <ul id="listaInformacion">
                 <!-- Los datos se tendrian que ver acá -->
             </ul>
         </div>
+
+        <div id="bandDataList" class="informacionesreg" >
+            <h2>Información Registrada Segundo formulario:</h2>
+            <ul id="listaInformacion2">
+                <!-- los datos se tendrian que ver aca -->
+            </ul>
+
+        </div>
+
     </main>
 
     <footer>
