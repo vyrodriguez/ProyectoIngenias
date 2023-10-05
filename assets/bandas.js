@@ -15,11 +15,11 @@ window.onload = () => {
     let flagEmail=0;
 
     inputName.addEventListener("keyup", (event) => {
-        let inputValue = event.target.value;
+        let datoName = event.target.value;
         let mensaje = "";
         let regex = /^(?=.*[a-z])(?=.*[0-9]).{7,}$/;
 
-        if (inputValue.length < 7) {
+        if (datoName.length < 7) {
             mensaje = "El nombre de usuario debe tener al menos 7 caracteres.";
            flagName=0;
         }
@@ -30,15 +30,15 @@ window.onload = () => {
     });
 
     inputPassword.addEventListener("keyup", (event) => {
-        let inputValue = event.target.value;
+        let datoPass = event.target.value;
         let mensaje = "";
         let regex = /[0-9]/;
 
-        if (inputValue.length < 7) {
+        if (datoPass.length < 7) {
             mensaje = "La contraseña debe tener al menos 7 caracteres.";
            flagPassword=0;
         } else {
-            if (!regex.test(inputValue)) {
+            if (!regex.test(datoPass)) {
                 mensaje = "La contraseña debe contener por lo menos un número"
                flagPassword=0;
             }
@@ -97,49 +97,29 @@ window.onload = () => {
         mensajeEmail.innerText = mensaje;
 
     });
-
-
-
-
     // Guardado de infomación del formulario.
     formulario.addEventListener('submit', function(event){
     event.preventDefault();
-    // let datos = { nombre: inputName.value,
-    //             password: inputPassword.value,
-    //             email:    inputEmail.value };
-    // let datoConvertido = JSON.stringify(datos);
-
     if (flagEmail != 1 || flagConfir != 1 || flagName != 1 || flagPassword != 1) {
         console.log(flagEmail);
-        alert("fuiste wey");
+        alert("Falta completar datos");
     }
-        }); //fin del evento
-
-
-
-
+    else{
+        alert("Registro Exitoso");        
+        // Guardar la variable en localStorage
+        localStorage.setItem("nameGuardado", inputName.value);
+        localStorage.setItem("PassGuardado", inputPassword.value);
+    }
+ }); //fin del evento
 
 };//fin del load.
 
-
-
-
-
-
-
-
- function mostrarAlerta() {
-     alert('¡BIENVENIDOS A BANDAS COMODORENSES, NO TE OLVIDES DE SEGUIRNOS EN NUESTRAS REDES SOCIALES!');
- }
-
-
 function iniciarSesion() {
-
     let arrayDeUsuarios = [
         //Usuario N°1
         {
-            usuario: "vicky",
-            contrasena: "123456",
+            usuario: localStorage.getItem("nameGuardado"),
+            contrasena: localStorage.getItem("PassGuardado"),
         },
         // Usuario N°2
         {
@@ -150,34 +130,34 @@ function iniciarSesion() {
         {
             usuario: "ale",
             contrasena: "394jsj",
-
         },
     ]
 
     var usuario = prompt("Ingrese su nombre de usuario:");
     var contrasena = prompt("Ingrese su contraseña:");
-    if (usuario && contrasena){
-        console.log(arrayDeUsuarios.length);
-        console.log(usuario);
-        console.log(contrasena);
-          for (let i = 0; i < arrayDeUsuarios.length; i++){
-             console.log(arrayDeUsuarios);
-              if(usuario== arrayDeUsuarios[i].usuario && contrasena == arrayDeUsuarios[i].contrasena ){
-              var exito= "Inicio de sesion exitoso";
-              }
-              else{
-                  alert('Nombre de usuario o contraseña incorrecta')
-              }
-          }
-    }
-    else{
-        alert('Debe ingresar un nombre de usuario y contraseña')
-    }
 
-}
+    if (usuario && contrasena) {
+        var exito = false; // Variable para indicar si se ha encontrado una coincidencia
+        for (let i = 0; i < arrayDeUsuarios.length; i++) {
+            if (usuario === arrayDeUsuarios[i].usuario && contrasena === arrayDeUsuarios[i].contrasena) {
+                exito = true; // Coincidencia encontrada
+                break; // Salir del bucle una vez que se haya encontrado una coincidencia
+            }
+        }
+        if (exito) {
+            alert("Inicio de sesión exitoso");
+        } else {
+            alert("Nombre de usuario o contraseña incorrecta");
+        }
+    } else {
+        alert("Debe ingresar un nombre de usuario y contraseña");
+    }
+   let miPerfil=document.getElementById("miPerfil")
+   miPerfil.innerText = "Mi perfil";
 
-function Registrarse() {
-    alert('Sin Habilitar, sepan disculpar')
+   let cerrarSession=document.getElementById("cerrarSession")
+   cerrarSession.innerText = "Cerrar Sesion";
+    
 }
 
 

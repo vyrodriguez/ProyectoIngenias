@@ -32,9 +32,10 @@
     
     <header>
         <div class="container-sm d-flex justify-content-end">
-            <button  onclick="iniciarSesion()" type="button" class="btn btn-sm btn-outline-info">Iniciar Sesion</button>
-            <a href="registrarse.html" class="btn btn-sm btn-outline-danger">Registrarse</a>
+            <button  id="miPerfil" onclick="iniciarSesion()" type="button" class="btn btn-sm btn-outline-info">Iniciar Sesion</button>
+            <a href="registrarse.html" id="cerrarSession" class="btn btn-sm btn-outline-danger">Registrarse</a>
         </div>
+        
         <div class="imagenposicion"><img class= "logo" src="img/logotiporedondo2.jpg" alt="Logotipo Bandas Comodoro Rivadavia"></div>
 
         <nav>
@@ -46,44 +47,45 @@
               <li><a href="contacto.html" class="enlace">¿Querés formar parte?</a></li>
             </ul>
         </nav>
+
         </header>
 
 <main>
-    <div class="container registro mx-auto">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
+    <div class="container-fluid mb-3">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
                 <form id="formularioNuevoUsuario">
                     <h2>Nuevo Usuario</h2>
-                    <div class="row">
-                        <div class="form-group col-md-6">
+                    <div class="row ">
+                        <div class="form-group col-md-6 col-sm-12">
                             <label for="name">Usuario</label>
                             <input type="text" class="form-control" name="name" id="name" placeholder="Ingresa un Usuario">
                             <p id="mensajeName" class="text-light"></p>
                         </div>
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-6 col-sm-12">
                             <label for="email">Email</label>
                             <input type="email" class="form-control" name="email" id="email" placeholder="Ingresa tu Email">
                             <p id="mensajeEmail" class="text-light"></p>
                         </div>
                     </div>
                     <div class="row">
-                    <div class="form-group col-md-6">
-                        <label for="password">Contraseña</label>
-                        <input type="password" class="form-control" name="password" id="password" placeholder="Ingresa Contraseña">
-                        <p id="mensajePass" class="text-light"></p>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="confirmPassword">Repetir Contraseña</label>
-                        <input type="password" class="form-control" name="confirmPassword" id="confirmPassword" placeholder="Repite Contraseña">
-                        <p id="mensajeConfirm" class="text-light"></p>
-                    </div>
+                        <div class="form-group col-md-6 col-sm-12">
+                            <label for="password">Contraseña</label>
+                            <input type="password" class="form-control" name="password" id="password" placeholder="Ingresa Contraseña">
+                            <p id="mensajePass" class="text-light"></p>
+                        </div>
+                        <div class="form-group col-md-6 col-sm-12">
+                            <label for="confirmPassword">Repetir Contraseña</label>
+                            <input type="password" class="form-control" name="confirmPassword" id="confirmPassword" placeholder="Repite Contraseña">
+                            <p id="mensajeConfirm" class="text-light"></p>
+                        </div>
                     </div>
                     <button class="btn btn-primary btn-block" type="submit">Crear Usuario</button>
                 </form>
             </div>
         </div>
     </div>
-    
+        
             
 </main>
 <footer>

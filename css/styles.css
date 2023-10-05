@@ -9,7 +9,7 @@ body{
 }
 
 .logo{
-    width: 30%;
+    width: 250px;
     margin: center;
    
     
@@ -104,7 +104,6 @@ footer{
 .contacto{
     text-align: justify;
     color: white;
-    text-align: justify;
     font-family: 'Chakra Petch', sans-serif;
     font-size: 10px;
     margin: 0 0 0 5px;
@@ -119,7 +118,7 @@ footer{
 .indice{
 
     color: white;
-    font-size: 10px;
+    font-size: 15px;
     text-align: justify;
     text-align: center;
     border: 1px solid #3dd8fc;
@@ -271,8 +270,6 @@ form {
     padding: 5px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
-    text-align: center;
-    width: 200px;
 }
 
 .estructuraForm{
@@ -381,14 +378,6 @@ input, textarea {
 
 
 
-/* ----------------------------------------------------------------------------------------- */
-                                /* RESPONSIVE MOBILE M */
-/* ----------------------------------------------------------------------------------------- */
-@media (min-width: 375px){
-    .parrafoprincipal{
-        font-size: 28px;
-    }
-}
 /* ----------------------------------------------------------------------------------------- */
                                 /* RESPONSIVE MOBILE L */
 /* ----------------------------------------------------------------------------------------- */
@@ -541,7 +530,7 @@ input, textarea {
                            /* ESTILO BARRA DE NAVEGACION */
    /* ----------------------------------------------------------------------------------------- */
    .enlace{
-       font-size: 35px;
+       font-size: 25px;
        padding: 15px;
    }
 
