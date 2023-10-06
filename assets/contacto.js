@@ -4,66 +4,90 @@ function mostrarAlerta() {
      alert('¡BIENVENIDOS A BANDAS COMODORENSES, NO TE OLVIDES DE SEGUIRNOS EN NUESTRAS REDES SOCIALES!');
 }
 
-// Función para guardar información en localStorage
-function guardarInformacion() {
-    const nombre = document.querySelector(".name").value;
-    const email = document.querySelector(".email").value;
-    const telefono = document.querySelector(".phone").value;
-    const banda = document.querySelector('input[name="band"]:checked').value;
-    const mensaje = document.getElementById("message").value;
 
-    // Crear un objeto para almacenar los datos
-    const datos = {
-        nombre,
-        email,
-        telefono,
-        banda,
-        mensaje
+// localstorage del primer formulario
+document.querySelector('.registro').addEventListener('submit', function (event) {
+    event.preventDefault();
+  
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const band = document.querySelector('input[name="band"]:checked').value;
+    const message = document.getElementById('message').value;
+  
+    const userData = {
+      name,
+      email,
+      phone,
+      band,
+      message,
     };
+  
+    const userDataJSON = JSON.stringify(userData);
+  
+    localStorage.setItem('userData', userDataJSON);
+  
+    console.log('Información del usuario almacenada:');
+    console.log(userData);
+  
+    // Agregar la información a la lista en la página
+    const userInfoList = document.getElementById('userInfoList');
+    userInfoList.innerHTML = `
+      <h2>Información del Usuario:</h2>
+      <ul>
+        <li>Nombre: ${name}</li>
+        <li>Email: ${email}</li>
+        <li>Teléfono: ${phone}</li>
+        <li>Banda: ${band}</li>
+        <li>Mensaje: ${message}</li>
+      </ul>
+    `;
+  
+    const userForm = document.getElementById('userForm');
+    userForm.reset();
+  });
+  
+  // localstorage para el segundo formulario
+  document.querySelector('.registro2').addEventListener('submit', function (event) {
+    event.preventDefault();
+  
+    const name = document.querySelector('.name2').value;
+    const email = document.querySelector('.email2').value;
+    const phone = document.querySelector('.phone2').value;
+    const genero = document.querySelector('.genero').value;
+    const band2 = document.querySelector('input[name="band2"]:checked').value;
+    const message2 = document.querySelector('.message2').value;
+  
+    const bandData = {
+      name,
+      email,
+      phone,
+      genero,
+      band2,
+      message2,
+    };
+  
+    const bandDataJSON = JSON.stringify(bandData);
+  
+    localStorage.setItem('bandData', bandDataJSON);
+  
+    console.log('Información de la banda almacenada:');
+    console.log(bandData);
+  
+    // lista de informacion
+    const bandDataList = document.getElementById('bandDataList');
+    bandDataList.innerHTML = `
+      <h2>Información de la Banda:</h2>
+      <ul>
+        <li>Nombre de la Banda: ${name}</li>
+        <li>Email: ${email}</li>
+        <li>Teléfono: ${phone}</li>
+        <li>Género Musical: ${genero}</li>
+        <li>Tienen Redes Sociales: ${band2}</li>
+        <li>Mensaje: ${message2}</li>
+      </ul>
+    `;
 
-    // Obtener datos existentes 
-    let datosGuardados = JSON.parse(localStorage.getItem("datos")) || [];
-
-    // Agregar los nuevos datos a la lista
-    datosGuardados.push(datos);
-
-    // Almacenar la lista actualizada en localStorage
-    localStorage.setItem("datos", JSON.stringify(datosGuardados));
-
-    // Limpiar el formulario
-    document.getElementById("formulario").reset();
-
-    // Mostrar la información actualizada
-    mostrarInformacion();
-}
-
-//  Función para mostrar la información almacenada
- function mostrarInformacion() {
-     const listaInformacion = document.getElementById("listaInformacion");
-     listaInformacion.textContent = "";
-//  Obtener datos almacenados en localStorage
-     const datosGuardados = JSON.parse(localStorage.getItem("datos"));
-     // esto igual se va a ver en la pagina los datos guardados
-
-     if (datosGuardados && datosGuardados.length > 0) {
-          for (let index = 0; index < datosGuardados.length; index++) {
-              const datos = datosGuardados[index];
-              const li = document.createElement("li");
-              li.textContent = JSON.stringify(datos);
-            listaInformacion.appendChild(li);
-         } 
-         } else {
-          listaInformacion.textContent = "<li>No hay información almacenada.</li>";
-      } }
-
-   
-// Agregar un evento al formulario para guardar los datos
-// const formulario = document.getElementById("formulario");
-// formulario.addEventListener("submit", function (e) {
-//       e.preventDefault();
-//      guardarInformacion();
-// });
-
-
-// Mostrar la información almacenada al cargar la página
-mostrarInformacionDesdeLocalStorage();
+    const bandForm = document.getElementById('bandForm');
+    bandForm.reset();
+  });

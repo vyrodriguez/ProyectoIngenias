@@ -25,7 +25,7 @@
 
     <!-- JS UTILIZADO -->
     <script src="assets/bandas.js"></script>
-    <title>BANDAS COMODORENSES INICIO </title>
+    <title>Registrarse</title>
     
 </head>
 <body>
@@ -47,47 +47,48 @@
               <li><a href="contacto.html" class="enlace">¿Querés formar parte?</a></li>
             </ul>
         </nav>
-    </header>
+
+        </header>
 
 <main>
-    
-    <div class="imagenposicion"><h1 class="bienvenido">¡BIENVENIDOS!</h1></div>
-    
-    <div class= "indice">
-        <p>¡Te invitamos a que escuches nuestra lista de reproducción!</p>
-        <div class="imagenposicion"><iframe width="150" height="80" src="https://www.youtube.com/embed/videoseries?si=7sGPziFBzHVaraxI&amp;list=PLPTNyGKweQXdvNv8uyhm5cnzMniXXOtXt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    <div class="container-fluid mb-3">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <form id="formularioNuevoUsuario">
+                    <h2>Nuevo Usuario</h2>
+                    <div class="row ">
+                        <div class="form-group col-md-6 col-sm-12">
+                            <label for="name">Usuario</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Ingresa un Usuario">
+                            <p id="mensajeName" class="text-light"></p>
+                        </div>
+                        <div class="form-group col-md-6 col-sm-12">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Ingresa tu Email">
+                            <p id="mensajeEmail" class="text-light"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6 col-sm-12">
+                            <label for="password">Contraseña</label>
+                            <input type="password" class="form-control" name="password" id="password" placeholder="Ingresa Contraseña">
+                            <p id="mensajePass" class="text-light"></p>
+                        </div>
+                        <div class="form-group col-md-6 col-sm-12">
+                            <label for="confirmPassword">Repetir Contraseña</label>
+                            <input type="password" class="form-control" name="confirmPassword" id="confirmPassword" placeholder="Repite Contraseña">
+                            <p id="mensajeConfirm" class="text-light"></p>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-block" type="submit">Crear Usuario</button>
+                </form>
+            </div>
+        </div>
     </div>
-    <div class= "indice">
-        <h1>BANDAS LOCALES</h1>
-        <p>Comodoro Rivadavia, una ciudad situada en la Patagonia argentina ha dado origen a diversas agrupaciones talentosas. A continuación, le presentamos cinco de estas notables bandas locales que cautivan a audiencias con su singular propuesta artística y su pasión por la música.</p>
-        <div class="imagenposicion"><img src="img/logodiostesalvevecina.jpg" alt="logo de Dios Te Salve Vecina (Banda)" class="flyer">  
-        <img src="img/logoabelardos.jpg" alt="logo de Abelardos (Banda)" class="flyer">
-        <img src="img/logopolifonia.jpg" alt="logo de Polifonia (Banda)" class="flyer">
-        <img src="img/logoeldescarte.jpg" alt="logo de El Descarte (Banda)" class="flyer">
-        <img src="img/logoaluxinados.jpg" alt="logo de aluxinados (Banda)" class="flyer"></div>
-        <a href="/bandas.html" class="vermas">VER MÁS</a>
-    </div>
-    <div class= "indice">
-        <h1>PRÓXIMAS FECHAS</h1>
-        <p>¿Querés saber cuando y en que lugar se presentan las bandas? En esta sección lo vas a descubrir.</p>
-        <img class="flyer" src="img/invitaciondeabelardos.jpg" alt="Flyer Abelardos">
-        <img class = "flyer" src="img/invitaciondealuxinados.jpg" alt="Flyer Aluxinados">
-        <img class="flyer" src="img/invitaciondeeldescarte.jpg" alt="Flyer El Descarte">
-        <img class="flyer" src="img/invitaciondediostesalve.jpg" alt="Flyer Dios te salve vecina">
-        <img class="flyer" src="img/invitaciondepolifonia.jpg" alt="Flyer Polifonia">
-        <a href="/proximasFechas.html" class="vermas">VER MÁS</a>
-
-    </div>
-    <div class= "indice">
-        <h1>¿QUERÉS FORMAR PARTE DE NUESTRO EQUIPO?</h1>
-        <p>¿Tenés una banda y necesitas difundirla? Te invitamos a que llenés un formulario para que te conectactemos</p>
-        <a href="/contacto.html" class="vermas">VER MÁS</a>
-        <p>O simplemente te gusto nuestro trabajo y querés ser parte él? te invitamos también a que nos contactes mediante el siguiente formulario</p>
-        <a href="/contacto.html" class="vermas">VER MÁS</a>
         
-    </div>
+            
 </main>
-    <footer>
+<footer>
         <img  class="logoredondoFooterB" src="img/logotiporedondo2.jpg" alt="Logotipo Bandas Comodoro Rivadavia">
         <div class="descripcion">Bandas Comodorenses es una organización no lucrativa, independiente y autogestiva que tiene como objetivo la difusión de todas las actividades relacionadas a Bandas de Música de la Ciudad de Comodoro Rivadavia y alrededores.</div>
         <div class="contacto">
@@ -95,7 +96,6 @@
             <div><a href="https://goo.gl/maps/2DCLubwdgDPyL7ZE7"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i></a> Algún lugar de Comodoro</div>
             <div><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> bcomodorenses@gmail.com</div>
             <div><i class="fa-solid fa-phone" style="color: #fcfcfc;"></i>  (0297)-4064856</div>
-            <div>Copyright DIMATERIA © 2023 - Todos los derechos reservados.</div>
         </div>
         <div  class="textoFooterRedes">
             <div>¡Seguinos en nuestras redes sociales!</div>

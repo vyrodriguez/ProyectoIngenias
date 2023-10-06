@@ -3,11 +3,17 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+        <!-- Libreria Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    <!-- Estilo de CSS -->
+    
         <!-- TIPOGRAFIA -->
-        <link rel="stylesheet" href="css/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap" rel="stylesheet">
@@ -17,26 +23,23 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- ESTILOS CSS -->
         <link rel="stylesheet" href="css/styles.css">
-        <link rel="website icon" type="jpg" href="img/logotiporedondo2.jpg">
-            <!-- JS UTILIZADO -->
-        <script src="assets/bandas.js"></script>
+    
+        
 
         <title>BANDAS COMODORENSES INICIO </title>
         
     </head>
     <body>
         <header>
-            <div class="caja">
-                <div onclick="iniciarSesion()">
-                    Ingresar
-                </div>
-                <div onclick="Registrarse()">
-                    /Registrarse
-                </div>
+            <div class="container-sm d-flex justify-content-end">
+                <button  id="miPerfil" onclick="iniciarSesion()" type="button" class="btn btn-sm btn-outline-info">Iniciar Sesion</button>
+                <a href="registrarse.html" id="cerrarSession" class="btn btn-sm btn-outline-danger">Registrarse</a>
             </div>
-            <div onclick="mostrarAlerta()" class="imagenposicion"><img class= "logo" src="img/logotiporedondo2.jpg" alt="Logotipo Bandas Comodoro Rivadavia"></div>
-                <nav>
-                <ul  class=" navbar navbar-dark menu">
+                
+            <div class="imagenposicion"><img class= "logo" src="img/logotiporedondo2.jpg" alt="Logotipo Bandas Comodoro Rivadavia"></div>
+    
+            <nav>
+                <ul  class="navbar navbar-dark menu">
                   <li><a href="index.html" class="enlace">Inicio</a></li>
                   <li><a href="Bandas.html" class="enlace">Bandas Locales</a></li>
                   <li><a href="proximasFechas.html" class="enlace">Próximas Fechas</a></li>
@@ -44,7 +47,7 @@
                   <li><a href="contacto.html" class="enlace">¿Querés formar parte?</a></li>
                 </ul>
             </nav>
-        </header>
+            </header>
  <main>
     <div class="parrafoprincipal">
         <h1 class="h1principal12">PRÓXIMAS FECHAS</h1>
@@ -57,28 +60,28 @@
       <div class="imagenposicion"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2778.5169894843402!2d-67.48020795983558!3d-45.86096533540754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde455dccbff05e5%3A0xacd53d87b9e5ae9c!2sEl%20S%C3%B3tano%20Pub!5e0!3m2!1ses!2sar!4v1690571830527!5m2!1ses!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
     </div>
 
-       <div class="presentacionconborde">
-       <div class="imagenposicion"><img class="invitacion23" src="img/invitaciondealuxinados.jpg" alt=" Aluxinados"></div>
-       <p class="presentacionpf">No te pierdas el gran espetaculo de Aluxinados, con sus canciones bien rockeras para pasar una noche diferente. El dia 20 de enero desde las 21hs. Las entradas las podes conseguir en calle San Martin 239.</p>
-    <div class="imagenposicion"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2778.5169894843402!2d-67.48020795983558!3d-45.86096533540754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde455dccbff05e5%3A0xacd53d87b9e5ae9c!2sEl%20S%C3%B3tano%20Pub!5e0!3m2!1ses!2sar!4v1690571830527!5m2!1ses!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    <div class="presentacionsinborde">
+        <div class="imagenposicion"><img class="invitacion23" src="img/invitaciondealuxinados.jpg" alt=" Aluxinados"></div>
+        <p class="presentacionpf">No te pierdas el gran espetaculo de Aluxinados, con sus canciones bien rockeras para pasar una noche diferente. El dia 20 de enero desde las 21hs. Las entradas las podes conseguir en calle San Martin 239.</p>
+        <div class="imagenposicion"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2778.5169894843402!2d-67.48020795983558!3d-45.86096533540754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde455dccbff05e5%3A0xacd53d87b9e5ae9c!2sEl%20S%C3%B3tano%20Pub!5e0!3m2!1ses!2sar!4v1690571830527!5m2!1ses!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
     </div>
    
    <div class="presentacionconborde">
        <div class="imagenposicion"><img class="invitacion23" src="img/invitaciondeeldescarte.jpg" alt=" El Dralvarez"></div>
        <p class=" presentacionpf">¡No te podes perder este gran atributo a Los Redondos! El dia sabado 1 de Octubre desde las 00hs. Las entradas las podes conseguir en calle San Martin 464.</p>
-        <div class="imagenposicion"><div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2778.5169894843402!2d-67.48020795983558!3d-45.86096533540754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde455dccbff05e5%3A0xacd53d87b9e5ae9c!2sEl%20S%C3%B3tano%20Pub!5e0!3m2!1ses!2sar!4v1690571830527!5m2!1ses!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>   
+        <div class="imagenposicion"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2778.5169894843402!2d-67.48020795983558!3d-45.86096533540754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde455dccbff05e5%3A0xacd53d87b9e5ae9c!2sEl%20S%C3%B3tano%20Pub!5e0!3m2!1ses!2sar!4v1690571830527!5m2!1ses!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>   
     </div>
 
-   <div class="presentacionconborde">
+   <div class="presentacionsinborde">
        <div class="imagenposicion"><img class="invitacion23" src="img/invitaciondediostesalve.jpg" alt="Dios Te Salve Vecina"></div>
        <P class=" presentacionpf">¡No te podes perder este show de Dios te Salve Vecina festejando sus 6 años! Se presentan el dia 11 de Marzo desde las 21hs en puerta y 23hs en Jam. Las entradas las podes conseguir en calle San Martin 239.</P>
-        <div class="imagenposicion"><div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2778.5169894843402!2d-67.48020795983558!3d-45.86096533540754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde455dccbff05e5%3A0xacd53d87b9e5ae9c!2sEl%20S%C3%B3tano%20Pub!5e0!3m2!1ses!2sar!4v1690571830527!5m2!1ses!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></div>
+        <div class="imagenposicion"><div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2778.5169894843402!2d-67.48020795983558!3d-45.86096533540754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde455dccbff05e5%3A0xacd53d87b9e5ae9c!2sEl%20S%C3%B3tano%20Pub!5e0!3m2!1ses!2sar!4v1690571830527!5m2!1ses!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
     </div> 
    
    <div class="presentacionconborde">
        <div class="imagenposicion"><img class="invitacion23" src="img/invitaciondepolifonia.jpg" alt="Polifonia"></div>
        <p class=" presentacionpf">¡Encerio te vas a perder esta noche! Se presentan el dia 8 de Julio Polifonia. Las entradas las podes conseguir en calle Sarmiento 923.</p>
-        <div class="imagenposicion"><div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2778.5711258671254!2d-67.49074702427697!3d-45.85988203521437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde455b706ec74db%3A0x1d2195a94a9e4345!2sKingston%20Beer!5e0!3m2!1ses!2sar!4v1690577061575!5m2!1ses!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></div>
+        <div class="imagenposicion"><div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2778.5711258671254!2d-67.49074702427697!3d-45.85988203521437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde455b706ec74db%3A0x1d2195a94a9e4345!2sKingston%20Beer!5e0!3m2!1ses!2sar!4v1690577061575!5m2!1ses!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
     </div>
  </main>
 
@@ -101,6 +104,7 @@
                 <a href="https://www.youtube.com/user/fundacionypf" target="_blank"><i class="fa-brands fa-square-youtube" style="color: white;"></i></a>
             </div>            
     </footer>
+
     <main>
         <section id="Bandas">
             <h2>Liatado</h2>
