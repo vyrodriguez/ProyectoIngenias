@@ -1,4 +1,4 @@
-// Aca Abril va a hacer el localstorage
+// LocalStorage realizado por Abril Morales
 
 function mostrarAlerta() {
      alert('¡BIENVENIDOS A BANDAS COMODORENSES, NO TE OLVIDES DE SEGUIRNOS EN NUESTRAS REDES SOCIALES!');
@@ -45,8 +45,10 @@ document.querySelector('.registro').addEventListener('submit', function (event) 
   
     const userForm = document.getElementById('userForm');
     userForm.reset();
-  });
   
+    alert('INFORMACIÓN REGISTRADA CON ÉXITO');
+});
+
   // localstorage para el segundo formulario
   document.querySelector('.registro2').addEventListener('submit', function (event) {
     event.preventDefault();
@@ -90,4 +92,6 @@ document.querySelector('.registro').addEventListener('submit', function (event) 
 
     const bandForm = document.getElementById('bandForm');
     bandForm.reset();
-  });
+
+     alert('INFORMACIÓN REGISTRADA CON ÉXITO');
+});
