@@ -9,11 +9,11 @@ function mostrarAlerta() {
 document.querySelector('.registro').addEventListener('submit', function (event) {
     event.preventDefault();
   
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const phone = document.getElementById('phone').value;
+    const name = document.getElementById('name1').value;
+    const email = document.getElementById('email1').value;
+    const phone = document.getElementById('phone1').value;
     const band = document.querySelector('input[name="band"]:checked').value;
-    const message = document.getElementById('message').value;
+    const message = document.getElementById('message1').value;
   
     const userData = {
       name,
@@ -50,15 +50,15 @@ document.querySelector('.registro').addEventListener('submit', function (event) 
 });
 
   // localstorage para el segundo formulario
-  document.querySelector('.registro2').addEventListener('submit', function (event) {
+document.querySelector('.registro22').addEventListener('submit', function (event) {
     event.preventDefault();
   
-    const name = document.querySelector('.name2').value;
-    const email = document.querySelector('.email2').value;
-    const phone = document.querySelector('.phone2').value;
-    const genero = document.querySelector('.genero').value;
+    const name = document.getElementById('name2').value;
+    const email = document.getElementById('email2').value;
+    const phone = document.getElementById('phone2').value;
+    const genero = document.getElementById('genero1').value;
     const band2 = document.querySelector('input[name="band2"]:checked').value;
-    const message2 = document.querySelector('.message2').value;
+    const message2 = document.getElementById('message2').value;
   
     const bandData = {
       name,
