@@ -146,17 +146,18 @@ function iniciarSesion() {
         }
         if (exito) {
             alert("Inicio de sesión exitoso");
+            let miPerfil=document.getElementById("miPerfil")
+            miPerfil.innerText = "Mi perfil";
+
+            let cerrarSession=document.getElementById("cerrarSession")
+            cerrarSession.innerText = "Cerrar Sesion";
         } else {
             alert("Nombre de usuario o contraseña incorrecta");
         }
     } else {
         alert("Debe ingresar un nombre de usuario y contraseña");
     }
-   let miPerfil=document.getElementById("miPerfil")
-   miPerfil.innerText = "Mi perfil";
-
-   let cerrarSession=document.getElementById("cerrarSession")
-   cerrarSession.innerText = "Cerrar Sesion";
+   
     
 }
 
