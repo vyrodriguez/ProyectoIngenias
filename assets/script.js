@@ -1,75 +1,73 @@
 
-const jsonBandas =`[
+const jsonBandas = `[ 
+  {
+      "nombre": "abelardos",
+      "imagen": "img/invitaciondeabelardos.jpg",
+      "fecha": "10 de diciembre",
+      "ubicacion": "San Martin 239, Comodoro Rivadavia",
+      "entradas": "calle san martin 239"
+  },
+  {
+      "nombre": "aluxinados",
+      "imagen": "img/invitaciondealuxinados.jpg",
+      "fecha": "20 de enero",
+      "ubicacion": "San Martin 239, Comodoro Rivadavia",
+      "entradas": "calle san martin 239"
+  },
+  {
+      "nombre": "el descarte",
+      "imagen": "img/invitaciondeeldescarte.jpg",
+      "fecha": "1 de octubre",
+      "ubicacion": "San Martin 464, Comodoro Rivadavia",
+      "entradas": "Calle San Martin 239"
+  },
+  {
+      "nombre": "Dios te Salve Vecina",
+      "imagen": "img/invitaciondediostesalve.jpg",
+      "fecha": "11 de marzo",
+      "ubicacion": "San Martin 239, Comodoro Rivadavia",
+      "entradas": "San Martin 239"
+  },
+  {
+      "nombre": "Polifonia",
+      "imagen": "img/invitaciondepolifonia.jpg",
+      "fecha": "8 de julio",
+      "ubicacion": "San Martin 239, Comodoro Rivadavia",
+      "entradas": "Sarmiento 923"
+  }
+]`;
+
+let jsonConvertido = JSON.parse(jsonBandas);
+
+for (let i = 0; i < jsonConvertido.length; i++) {
+  let article = document.createElement("article");
+
+  let nombre = document.createElement("p");
+  nombre.innerText = "Nombre: " + jsonConvertido[i].nombre;
+  nombre.classList.add("presentacionpf");
+
+  let imagen = document.createElement("img");
+  imagen.src = jsonConvertido[i].imagen;
+  imagen.classList.add("invitacion23");
 
 
- {
-    
-   "nombre":"abelardos",
-    "imagen":"src=img/invitaciondeabelardos.jpg",
-    "fecha":"10 de diciembre",
-    "ubicacion":"San Martin 239, Comodoro Rivadavia",
-    "entradas":"calle san martin 239"
- 
+  let fecha = document.createElement("p");
+  fecha.innerText = "Fecha: " + jsonConvertido[i].fecha;
+  fecha.classList.add("presentacionpf");
 
-},
- 
-{
-      "nombre":"aluxinados",
-      "imagen":"src=img/invitaciondealuxinados",
-      "fecha":"20 de enero",
-      "ubicacion":"San Martin 239, Comodoro Rivadavia",
-      "entradas":"calle san martin 239"
-   
-},
+  let ubicacion = document.createElement("p");
+  ubicacion.innerText = "Ubicación: " + jsonConvertido[i].ubicacion;
+  ubicacion.classList.add("presentacionpf");
 
- {
+  let entradas = document.createElement("p");
+  entradas.innerText = "Entradas: " + jsonConvertido[i].entradas;
+ entradas.classList.add("presentacionpf");
 
-   "nombre":"el descarte",
-   "imagen": "src=img/invitaciondeeldescarte",
-   "fecha": "1 de octubre",
-   "ubicacion": "San Martin 464, Comodoro Rivadavia",
-   "entradas":"Calle San Martin 239"
+  article.appendChild(nombre);
+  article.appendChild(imagen);
+  article.appendChild(fecha);
+  article.appendChild(ubicacion);
+  article.appendChild(entradas);
 
- },
-
-
-{
-
-   "nombre":"Dios te Salve Vecina",
-   "imagen": "src=img/invitaciondediostesalve",
-   "fecha":"11 de marzo",
-   "ubicacion":"San Martin 239, Comodoro Rivadavia",
-   "entradas": "San Martin 239"
-
-},
-
- {
-   "nombre":"Polifonia",
-   "imagen":"src=img/invitciondepolifonia",
-   "fecha":"8 de julio",
-   "ubicacion":"San Martin 239, Comodoro Rivadavia",
-   "entradas":"Sarmiento 923"
-
+  document.getElementById("bandas").appendChild(article);
 }
-]`
-
- let jsonConvertido = JSON.parse(jsonBandas)
- console.log(jsonConvertido) 
-for (let i = 0; i <jsonConvertido.letgh;i++){
-}
-let article = document.createElement("article")
-
-let nombre = document.createElement("nombre")
-nombre.innerText = jsonConvertido[i].nombre
-
-let imagen = document.createElement("imagen")
-imagen.scr = jsonConvertido[i].imagen
-
-let fecha = document.createElement("fecha")
-fecha.innerText = jsonConvertido[i].fecha
-
-let ubicacion = document.createElement("ubicacion")
-ubicacion.scr = jsonConvertido[i].ubicacion 
-
-let entradas = document.createElement("entradas")
-entradas.innerText = jsonConvertido[i].entradas
