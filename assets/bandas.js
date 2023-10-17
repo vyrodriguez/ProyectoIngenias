@@ -36,14 +36,14 @@ window.onload = () => {
 
         if (datoPass.length < 7) {
             mensaje = "La contraseña debe tener al menos 7 caracteres.";
-           flagPassword=0;
+            flagPassword=false;
         } else {
             if (!regex.test(datoPass)) {
                 mensaje = "La contraseña debe contener por lo menos un número"
-               flagPassword=0;
+               flagPassword=false;
             }
             else{
-                flagPassword=1;
+                flagPassword=true;
             }
         }
 
@@ -57,25 +57,25 @@ window.onload = () => {
 
         if (inputValue.length < 7) {
             mensaje = "La contraseña debe tener al menos 7 caracteres.";
-           flagConfir=0;
+            flagConfir=false;
         } else {
             if (!regex.test(inputValue)) {
                 mensaje = "La contraseña debe contener por lo menos un número";
-             flagConfir=0;
+             flagConfir=false;
             }
             else{
                 if (inputPassword.value) {
                     if (inputPassword.value === inputValue) {
                         mensaje = "Las contraseñas coinciden"
-                       flagConfir=1;
+                       flagConfir=true;
                 
                     } else {
                         mensaje = "LAS CONTRASEÑAS NO COINCIDEN"
-                       flagConfir=0;
+                       flagConfir=false;
                     }
                 } else {
                     mensaje = "LAS CONTRASEÑAS NO COINCIDEN"
-                   flagConfir=0;
+                   flagConfir=false;
                 }
             }
         }
@@ -88,10 +88,10 @@ window.onload = () => {
         let regex = /^[A-Za-z0-9]+@[A-Za-z0-9]+\.[A-Za-z]+$/;
         if (!regex.test(datoEmail)) {
             mensaje = "Ingrese un email válido";
-            flagEmail=0;
+            flagEmail=false;
         }
         else {
-            flagEmail=1;
+            flagEmail=true;
         }
 
         mensajeEmail.innerText = mensaje;
@@ -100,7 +100,7 @@ window.onload = () => {
     // Guardado de infomación del formulario.
     formulario.addEventListener('submit', function(event){
     event.preventDefault();
-    if (flagEmail != 1 || flagConfir != 1 || flagName != 1 || flagPassword != 1) {
+    if (!flagEmail || !flagConfir || !flagName || !flagPassword ) {
         console.log(flagEmail);
         alert("Falta completar datos");
     }

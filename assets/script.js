@@ -1,4 +1,4 @@
-
+// Script utilizado en "Próximas Fechas"
 const jsonBandas =`[
 
 
