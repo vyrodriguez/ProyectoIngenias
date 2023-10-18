@@ -16,7 +16,6 @@ body{
 }
 .imagenposicion{
  text-align: center;
-    
 }
 /* ----------------------------------------------------------------------------------------- */
                                 /* ESTILO BARRA DE NAVEGACION */
@@ -208,7 +207,14 @@ nav.menuA123 a :hover{
     padding: 25px;
     margin: 5px;
 }
-
+.proximasFechas{
+    color: #3dd9fc;
+    font-size: 15px;
+    text-align: center;
+    border: 2px solid #3dd8fc;
+    padding: 25px;
+    margin: 5px;
+}
 .logotipoimagen{
     width: 250px;
     height: 150px;
@@ -246,7 +252,7 @@ nav.menuA123 a :hover{
     height: 150px;
     margin-right: 10px;
     transition: 0.5s;
-    display: inline-block;
+    /* display: inline-block; */
 }
 .invitacion23:hover{
     transform:scale(1.2)
@@ -260,6 +266,7 @@ nav.menuA123 a :hover{
     font-size: 15px;
     text-align: center;
     padding: 15px;
+    
 }
 
 
@@ -452,7 +459,9 @@ input, textarea {
         .presentacionconborde{
             font-size: 25px;
         }
-
+        .proximasFechas{
+            font-size: 25px;
+        }
         .logotipoimagen{
             width: 400px;
             height: 250px;
